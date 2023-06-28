@@ -1,0 +1,39 @@
+@import 'reset';
+@import 'impaginazione';
+@import 'colors.scss';
+@import 'spaziature';
+
+body{
+    background-color: $colore-sfondo;
+}
+header{
+    background-color: rgb(166, 166, 166);
+    @include flex-props(row, space-around, center);
+    background-color: $colore-primario;
+    padding: $padding-omogeneo;
+
+    nav{
+        
+        ul{
+            @include flex-props(row, space-around, center);
+            gap: 3rem;
+        }
+    }
+}
+#hero{
+    @include flex-props(column, space-around, center);
+    background-color: $colore-secondario;
+    div{
+        width: 500px;
+
+        img{
+            width: 100%;
+            
+        }
+    }
+    div{
+        flex-props(row, space-around, center);
+    }
+
+    
+}
